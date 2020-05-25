@@ -51,8 +51,8 @@ PRODUCT_PACKAGES += \
     libldacBT_dec \
     libsndmonitor \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
-
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    BluetoothQti
 # Camera
 PRODUCT_PACKAGES += \
     Snap
@@ -112,12 +112,14 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-system
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/lineage-sdk \
-    $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
+    $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap \
+    $(LOCAL_PATH)/overlay-system
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
