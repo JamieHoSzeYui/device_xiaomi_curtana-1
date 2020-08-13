@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "JamieHoSzeYui/kernel_xiaomi_sm6250-1",
+    "target_path": "kernel/xiaomi/sm6250"
+  },
+  {
+    "repository": "JamieHoSzeYui/vendor_xiaomi",
+    "target_path": "vendor/xiaomi"
+  }
+]
