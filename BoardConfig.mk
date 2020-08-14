@@ -180,5 +180,5 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX_LOCATION := 1
 TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # Inherit proprietary blobs
--include vendor/xiaomi/sm6250-common/BoardConfigVendor.mk
+-include vendor/xiaomi/curtana/BoardConfigVendor.mk
 
