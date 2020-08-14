@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 The LineageOS Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Whether the device supports Smart Pixels --> 
+    <bool name="config_supportSmartPixels">true</bool>
+
+    <!-- Whether device has physical tri state switch -->
+    <bool name="config_hasAlertSlider">true</bool>
+
+    <!-- Enable face auth when swiping security view for popup cameras-->
+    <bool name="config_faceAuthOnSecurityView">true</bool>
+
+    <!-- Whether device has warp charging support -->
+    <bool name="config_hasWarpCharger">true</bool>
+
+    <!-- Whether device has Dash charging support -->
+    <bool name="config_hasDashCharger">true</bool>
+
+    <!-- Whether device supports variable refresh rate -->
+    <bool name="config_hasVariableRefreshRate">true</bool>
+    <!-- Default setting for refresh rate
+      0 = Auto
+      1 = 60HZ
+      2 = 90Hz -->
+    <integer name="config_defaultVariableRefreshRateSetting">1</integer>
+
+    <!--Systeminfo for quick settings header -->
+    <string name="config_sysCPUTemp">/sys/class/<path_to_option></string>
+    <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+    <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
+    <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+
+    <!-- If Smart charging supported by kernel and device sepolicy -->
+    <bool name="config_smartChargingAvailable">true</bool>
+</resources>
